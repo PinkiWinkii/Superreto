@@ -256,3 +256,18 @@ footer {
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Estilo para las imágenes de los beneficios */
+.benefitImage {
+    width: 350px;
+    height: 350px;
+    max-width: 350px; /* Límite de ancho de 500px */
+    margin: 10px 0; /* Añade un pequeño margen superior e inferior */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar un efecto de profundidad */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.benefitImage:hover {
+    transform: scale(1.00); /* Efecto de zoom cuando el mouse pasa sobre la imagen */
+}
