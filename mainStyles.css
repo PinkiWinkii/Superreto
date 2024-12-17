@@ -174,7 +174,7 @@ header nav a:hover {
     margin-bottom: 10px;
 }
 
-/* Testimonios */
+
 /* Testimonios */
 .testimonials {
     margin-top: 40px;
@@ -187,10 +187,16 @@ header nav a:hover {
     margin-bottom: 20px;
 }
 
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 30px; /* Espacio entre las columnas */
+    margin-top: 20px;
+}
+
 .testimonial-item {
     background-color: #f7f7f7;
     padding: 20px;
-    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -202,7 +208,7 @@ header nav a:hover {
 }
 
 .testimonial-img {
-    width: 50px;
+    width: 50px; /* Imagen pequeña de perfil */
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;
@@ -217,6 +223,21 @@ header nav a:hover {
     font-size: 1.1em;
     color: #555;
 }
+
+/* Imagen adicional para cada testimonio */
+.testimonial-extra-img {
+    width: 100%;
+    max-width: 350px; /* Tamaño de la imagen adicional */
+    height: 350px;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+    margin-top: 15px; /* Añade un margen superior */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    display: block; /* Hace que la imagen sea un bloque */
+    margin-left: auto; /* Centra la imagen a la izquierda */
+    margin-right: auto; /* Centra la imagen a la derecha */
+}
+
 
 /* Preguntas Frecuentes */
 .faq {
