@@ -292,3 +292,139 @@ footer {
 .benefitImage:hover {
     transform: scale(1.00); /* Efecto de zoom cuando el mouse pasa sobre la imagen */
 }
+
+/* Media Queries para hacer todo responsive */
+@media (max-width: 768px) {
+    /* Header: Cambiar la disposición para pantallas más pequeñas */
+    header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Título de header */
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    /* Enlaces del menú */
+    header nav {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    header nav a {
+        margin: 10px 0;
+    }
+
+    /* Main body */
+    .main-body {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 100%;
+    }
+
+    /* Imagenes en who-we-are */
+    .who-we-are {
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+        text-align: center;
+    }
+
+    .who-we-are img {
+        max-width: 90%;
+        margin: 10px 0;
+    }
+
+    .who-we-are div {
+        min-width: 100%; /* Asegura que cada bloque ocupe el 100% del ancho disponible */
+    }
+
+    /* Productos: Ajuste en las columnas de los productos */
+    .product-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item img {
+        max-width: 100%; /* Asegura que las imágenes se adapten */
+    }
+
+    /* Testimonios */
+    .testimonial-container {
+        grid-template-columns: 1fr; /* Una columna en lugar de dos */
+    }
+
+    .testimonial-item {
+        padding: 15px;
+    }
+
+    /* FAQ: Ajuste de márgenes */
+    .faq-item h4 {
+        font-size: 1.4em;
+    }
+
+    /* Footer: Centrar el texto en pantallas pequeñas */
+    footer {
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    /* Beneficios: Ajuste en las imágenes */
+    .benefitImage {
+        width: 100%;
+        height: auto;
+        max-width: 90%; /* Asegura que las imágenes no excedan el ancho */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header: Ajustar tamaño del título y enlaces */
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    /* Títulos y texto en secciones principales */
+    .main-body h2 {
+        font-size: 2.5em;
+    }
+
+    .who-we-are h3, .products h3, .testimonials h3, .benefits h3, .faq h3 {
+        font-size: 2em;
+    }
+
+    .testimonial-item p {
+        font-size: 1em; /* Ajusta el tamaño del texto */
+    }
+
+    /* Cambios en las imágenes de los testimonios */
+    .testimonial-extra-img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    /* Productos: Asegurarse de que las imágenes de los productos se adapten */
+    .product-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product-item h4 {
+        font-size: 1.3em; /* Reducir tamaño de los títulos de los productos */
+    }
+
+    .product-item p {
+        font-size: 1em;
+    }
+
+    /* FAQ: Asegurarse de que los títulos se ajusten correctamente */
+    .faq-item h4 {
+        font-size: 1.3em;
+    }
+
+    /* Footer: Añadir margen superior en pantallas muy pequeñas */
+    footer {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+}
