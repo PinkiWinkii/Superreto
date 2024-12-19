@@ -371,6 +371,7 @@ footer {
 
     /* Beneficios: Ajuste en las imágenes */
     .benefitImage {
+        display: none;
         width: 100%;
         height: auto;
         max-width: 90%; /* Asegura que las imágenes no excedan el ancho */
@@ -427,4 +428,27 @@ footer {
         font-size: 0.8em;
         padding: 10px;
     }
+    
+    .benefitImage {
+        display: none;
+    }
+}
+
+.language-icon {
+    width: 46px; /* Ancho del icono */
+    height: 46px; /* Alto del icono */
+    margin: 0 8px; /* Espaciado entre los iconos */
+    display: inline-block; /* Alineación en línea */
+    cursor: pointer; /* Cambiar el cursor a mano cuando se pasa por encima */
+    transition: transform 0.3s ease; /* Animación de escala */
+}
+
+.language-icon img {
+    width: 100%; /* Ajusta la imagen al contenedor */
+    height: 100%; /* Ajusta la imagen al contenedor */
+    border-radius: 50%; /* Opcional: convierte los iconos en círculos */
+}
+
+.language-icon:hover {
+    transform: scale(1.2); /* Agranda el icono al pasar el ratón por encima */
 }
